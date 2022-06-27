@@ -1,0 +1,268 @@
+@media(min-width:320px) {
+  .navigation-menu{
+    display:none;
+    background-color: #FFFFFF;
+    margin:-8px;
+    padding:0px;
+    box-shadow: 0 0px 40px 10px #9B9B9B;
+    width: 0px;
+    height:0px;
+    position: absolute;
+    z-index: 5;
+    top:9px;
+
+  }
+  .navigation-menu__open{
+    display:inline;
+  }
+
+  .navigation__close-button{
+    display:flex;
+    background-color: #FF3E79;
+    width:40px;
+    height:40px;
+    position:absolute;
+    left:24px;
+    top: 24px;
+    border-radius: 20px;
+
+  }
+  .close-button_inside-element{
+    background-image: url("../img/cross.svg");
+    width:16px;
+    height:16px;
+    left:11.5px;
+    top:11.5px;
+    position: relative;
+  }
+  .navigation__logo-button{
+    background-image: url("../img/Group.svg");
+    width:97px;
+    height:51px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left:80px;
+    top:18px;
+  }
+  .navigation__search-button{
+    display:flex;
+    background-color: #FF3E79;
+    width:40px;
+    height:40px;
+    position:relative;
+    left:267px;
+    top: 24px;
+    border-radius: 20px;
+  }
+  .search-button_inside-element{
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    width:17px;
+    height:17px;
+    position:relative;
+    left:11px;
+    top:11px;
+
+  }
+  .navigation-menu a:hover{
+    color:#7E7E82;
+  }
+  .navigation__header-menu .navigation__close-button:hover{
+    transition-duration: 1s;
+    transform:rotate(45deg);
+    background-color: #ffaac9;
+
+  }
+  .navigation__header-menu .navigation__search-button:hover
+  {
+    transition-duration: 1s;
+    transform:rotate(-60deg);
+    background-color: #ffaac9;
+
+  }
+
+
+  .navigation-links{
+    width:200px;
+    height:400px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:120px;
+    left:24px;
+  }
+
+  .menu-list li a{
+    margin-top:5px;
+    font-family:"TTLakes-Regular",sans-serif;
+    width:220px;
+    top:0px;
+    position: relative;
+    text-align: left;
+    left:40px;
+    color: black;
+    width:216px;
+    font-weight: 500;
+  }
+
+
+  .navigation__info{
+    width:210px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:390px;
+    left:26px;
+    position: absolute;
+
+  }
+
+  .action-buttons__tel{
+    display:flex;
+    background-color: #FF3E79;
+    width:40px;
+    height:40px;
+    position:absolute;
+    left:2px;
+    top: 2px;
+    border-radius: 20px;
+
+  }
+  .action-buttons__tel:hover{
+    transition-duration: 1s;
+    transform:rotate(-45deg);
+    background-color: #ffaac9;
+  }
+  .action-buttons__message:hover{
+    transition-duration: 1s;
+    background-color: #ffaac9;
+  }
+  .action-buttons__contact:hover{
+    transition-duration: 1s;
+    background-color: #ffaac9;
+  }
+  .tel_inside-element{
+    background-image: url("../img/tel.svg");
+    width:18px;
+    height:18px;
+    position:absolute;
+    left:10px;
+    top:10px;
+  }
+  .action-buttons__message{
+    display:flex;
+    background-color: #FF3E79;
+    width:40px;
+    height:40px;
+    position:absolute;
+    left:56px;
+    top: 2px;
+    border-radius: 20px;
+  }
+  .message_inside-element{
+    background-image: url("../img/mess.svg");
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:10px;
+    top:11px;
+  }
+
+  .action-buttons__contact{
+    display:flex;
+    background-color: #FF3E79;
+    width:40px;
+    height:40px;
+    position:absolute;
+    left:112px;
+    top: 2px;
+    border-radius: 20px;
+  }
+
+
+  .navigation__contacts{
+    font-family:"TTLakes-Regular",sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    top:47px;
+    position:absolute;
+  }
+  .navigation__contacts h1{
+    font-family:"TTLakes-Regular",sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    top:0px;
+    left:-15px;
+
+  }
+  .navigation__languages{
+    width:100px;
+    height:30px;
+    background-color: #FFFFFF;
+    top:92px;
+    position: absolute;
+    font-family:"TTLakes-Regular",sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+  }
+
+  .navigation__languages span:not(:first-child){
+    padding-left: 4px;
+
+  }
+
+  .navigation-body-container__decoration{
+    width:4px;
+    height:32px;
+    background-image: url("../img/highlight.svg");
+    background-repeat: no-repeat;
+    top:116px;
+    position: relative;
+    z-index:1;
+    left:-40px;
+    background-size: 80%;
+  }
+
+}
+@media(min-width:1120px){
+  .navigation-menu{
+    position: absolute !important;
+    display: inline !important;
+    left:6px;
+    width:320px;
+    z-index: 1;
+    box-shadow: none;
+    height:330% !important;
+    background-color: white;
+  }
+  .navigation__close-button{
+    display: none;
+  }
+  .navigation__logo-button{
+    left:20px;
+  }
+  .navigation__languages{
+    top:122px;
+  }
+  .navigation-body-container__decoration{
+    position:relative;
+    left:5px;
+    top:142px;
+  }
+
+
+  .navigation__info {
+    top: 998px;
+  }
+  .navigation__contacts h1{
+    left:-35px;
+  }
+}
+@media(min-width:1500px){
+  .navigation-menu{
+    height:2100px !important;
+  }
+
+}

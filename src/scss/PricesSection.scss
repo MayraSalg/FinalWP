@@ -1,0 +1,184 @@
+@media(min-width:320px) {
+  .brands__prices-repair p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.2px;
+    font-family: "TTLakes-Regular", sans-serif;
+    position: relative;
+    text-align: left;
+    height:140px;
+    margin-top:-20px;
+    color: #7E7E82;
+  }
+
+  .swiper.prices {
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top:92px;
+    left:14px;
+  }
+  .prices{
+    display: flex;
+    width:100%;;
+    height:734px;
+    top:1155px;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding-right: 16px;
+  }
+  .prices-types__title{
+    padding:16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    font-family: "TTLakes-Regular", sans-serif;
+    position: absolute;
+    background-color: white;
+    padding-right: 100%;
+    width:100%;
+    border-top: 1px solid #D9FFF5;
+  }
+
+
+
+  .brands__prices-repair .icon-order{
+    right:130px;
+    height:32px;
+    position: relative;
+    top:70px;
+  }
+
+  dt{
+    position: relative;
+    margin-bottom: 40px;
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 14px;
+    color:#7E7E82;
+  }
+  dd{
+    position: relative;
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 14px;
+    width:228px;
+    top:-35px;
+    margin-bottom: -25px;
+    right:40px;
+  }
+
+}
+@media(min-width:768px) {
+  .prices{
+    top:1165px;
+    height:820px;
+    width:149%;
+  }
+
+  .swiper.prices{
+    display: none;
+  }
+  .brands__prices-table__hat{
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 16px;
+    color: #9B9B9B;
+    position: relative;
+    top:-50px;
+    left:20px;
+  }
+  .brands__prices-table__hat p:nth-child(2){
+    position: relative;
+    top:-38px;
+    left:375px;
+  }
+  .brands__prices-table__hat p:nth-child(3){
+    position: relative;
+    top:-77px;
+    left:457px;
+  }
+
+  .brands__prices-table{
+    position: relative;
+    background-color: white;
+    width:720px;
+    top:120px;
+    left:20px;
+    height:375px;
+    border-radius: 6px;
+    display:inline;
+  }
+  .brands__prices-repair{
+    position: relative;
+    padding-right:40px;
+    top:-130px;
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 14px;
+
+    width:720px;
+    left:18px;
+  }
+  .order-img{
+    position: relative;
+    left:20px;
+    top:0px;
+  }
+  td{
+    position: relative;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom:20px;
+    padding-top:20px;
+
+  }
+  tr:last-child td{
+    border-bottom:0px;
+  }
+  tr:first-child td{
+    top:10px;
+  }
+
+  .section-description__prices{
+    position: relative;
+    top:-110px;
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 14px;
+    width:420px;
+    height:60px;
+  }
+  .section-description__prices p:nth-child(2){
+    font-family: "TTLakes-Bold", sans-serif;
+    font-weight: Bold;
+  }
+  .arrowRight__prices{
+    position: relative;
+    top:-32px;
+    left:276px;
+  }
+
+}
+@media(min-width:1120px){
+  .prices{
+    top:1250px;
+  }
+  .brands__prices-table{
+    width:1020px;
+    left:36px;
+  }
+  .brands__prices-repair{
+    width:1025px;
+  }
+  .brands__prices-table__hat p:nth-child(2){
+    left:540px;
+  }
+  .brands__prices-table__hat p:nth-child(3){
+    left:660px;
+  }
+
+}

@@ -1,0 +1,276 @@
+@media(min-width:320px) {
+  .repair-types{
+    position: relative;
+    display: flex;
+    width:100%;
+    height:422px;
+    border-top: 1px solid #D9FFF5;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding-right: 16px;
+    top:725px;
+  }
+  .repair-types__title{
+    padding:16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    font-family: "TTLakes-Regular", sans-serif;
+    position: absolute;
+    background-color: white;
+    padding-right: 100%;
+    width:100%;
+    border-top: 1px solid #D9FFF5;
+    top:100px;
+  }
+
+  .swiper.repair {
+    display: block;
+    width: 260px;
+    height: 200px;
+    position: relative;
+    top:185px;
+    left:14px;
+  }
+  .brands__item-repair .icon-swiper{
+    width:40px;
+    height:40px;
+    position: relative;
+    top:50px;
+  }
+  .text-in{
+    display: none;
+  }
+
+  .brands-repair-types.container{
+    display: none;
+  }
+  .brands-repair{
+    display: none;
+  }
+
+
+  .brands__item-repair:nth-child(4),
+  .brands__item-repair:nth-child(5),
+  .brands__item-repair:nth-child(6),
+  .brands__item-repair:nth-child(7),
+  .brands__item-repair:nth-child(8),
+  .brands__item-repair:nth-child(9),
+  .brands__item-repair:nth-child(10)
+  {
+    position: relative;
+    height:0;
+    display: none;
+    margin-bottom:20px;
+    display: none;
+  }
+
+}
+@media(min-width:768px) {
+  .brands-repair{
+    display: flex;
+    position: relative;
+    top:24px;
+    flex-wrap: wrap;
+    width:720px;
+    height:208px;
+    background-color:#F8F8F8;
+    margin-left:24px;
+    top:79px;
+    align-items: stretch;
+
+  }
+  .brands-repair-types{
+    display: flex;
+    position: relative;
+    top:24px;
+    flex-wrap: wrap;
+    width:720px;
+    height:208px;
+    background-color:#F8F8F8;
+    margin-left:24px;
+    top: 85px;
+    margin-bottom: 20px;
+    align-items: stretch;
+  }
+  .brands-repair-types.container{
+    display: flex;
+  }
+  .brands-repair .brands__item{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 190px;
+    margin-bottom: 35px;
+  }
+  .content{
+    position: relative;
+    max-height:0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .accordion-repair a{
+    text-decoration: none;
+    color:black;
+  }
+  .content-accordion-repair{
+    position: relative;
+    max-height:0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .accordion a{
+    text-decoration: none;
+    color:black;
+  }
+
+  .brands__item-repair:nth-child(5),
+  .brands__item-repair:nth-child(6),
+  .brands__item-repair:nth-child(7),
+  .brands__item-repair:nth-child(8),
+  .brands__item-repair:nth-child(9),
+  .brands__item-repair:nth-child(10)
+  {
+    position: relative;
+    height:0;
+    display: none ;
+    margin-bottom:20px;
+    display: none;
+  }
+
+
+
+  .text-out-repair{
+    position: relative;
+    left:25px;
+    top:25px;
+  }
+  .text-in-repair{
+    display: none;
+    font-family: "TTLakes-Regular", sans-serif;
+    font-size: 16px;
+    position: relative;
+    left:40px;
+    top:20px;
+    left:25px;
+    top:205px;
+  }
+
+  .reversed-arrows{
+    position: relative;
+    right:110px;
+  }
+  .repair-types {
+    position: relative;
+    display: flex;
+    width: 150%;
+    height: 430px;
+    border-top: 1px solid #D9FFF5;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding-right: 16px;
+    top: 511px;
+  }
+  .repair-types__title{
+    top:0;
+  }
+  .swiper.repair{
+    display: none;
+  }
+
+  .brands__item-repair {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    position: static;
+    top: 16px;
+    height:160px;
+  }
+
+  section .repair-button{
+    visibility: hidden;
+  }
+
+
+}
+@media(min-width:1120px){
+
+  .brands-repair{
+    display: flex;
+    position: relative;
+    top:24px;
+    flex-wrap: wrap;
+    width:1040px;
+    height:208px;
+    background-color:#F8F8F8;
+    margin-left:33px;
+    top:79px;
+    align-items: stretch;
+  }
+
+
+  .brands-repair .brands__item{
+    margin-right:24px;
+    width:19%;
+    height:72px;
+  }
+
+  .arrow-lower {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 5px;
+    top: 390px;
+    left: 40px;
+    background-image: url("../img/strelochki.svg");
+  }
+  .arrow-upper {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 5px;
+    top: 398px;
+    left: 40px;
+    background-image: url("../img/strelochki.svg");
+  }
+  .repair-types{
+    top:532px;
+    height:394px;
+  }
+  .brands-repair-types{
+    width:1100px;
+  }
+
+  .brands__item-repair:nth-child(4){
+    display: flex !important;
+    height:160px !important;
+    top:0;
+
+  }
+
+}
+@media(min-width:1400px) {
+  .text-out-repair{
+    top:30px !important;
+    left:30px !important;
+  }
+
+}

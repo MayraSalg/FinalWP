@@ -1,0 +1,273 @@
+@media(min-width:320px) {
+  .reply{
+    display: none;
+    width:100%;
+    height:100%;
+    background-color: white;
+    z-index: 7;
+    position: relative;
+    top:-86px;
+  }
+  .call-back{
+    display: none;
+    width:100%;
+    height:100%;
+    background-color: white;
+    z-index: 7;
+    position: relative;
+    top:-87px;
+  }
+
+  .close-button a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    display: inline-block;
+    top: 24px;
+  }
+  .close-button-img__callback{
+    top:20px;
+    left:15px;
+    position: relative;
+    z-index: 1;
+  }
+  .close-button-img{
+    top:10px;
+    left:15px;
+    position: relative;
+    z-index: 1;
+  }
+  .close-button__call-back a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    display: inline-block;
+    top: 24px;
+  }
+  .close-button__call-back{
+    height:80px;
+    width:50px;
+    position: relative;
+  }
+  .highlight-img{
+    position: relative;
+    top: 40px;
+    right: 30px;
+  }
+  .highlight-line{
+    position: relative;
+    left:30px;
+    top:-30px;
+  }
+
+  .highlight-line p{
+    position: relative;
+    font-family:"TTLakes-Bold",sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    top:-24px;
+    right:13px;
+    width:288px;
+    z-index: 7;
+  }
+
+  .reply-body{
+    width:320px;
+    height:330px;
+    background-color: white;
+    position: absolute;
+    top:100px;
+    z-index: 7;
+  }
+  .reply-body__form{
+
+    width:268px;
+    height:38px;
+    margin-left:16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-family:"TTLakes-Regular",sans-serif;
+    padding-left:16px;
+  }
+  .reply-body__form:nth-child(1){
+    display: inline;
+  }
+  .reply-body__form:not(:first-of-type)
+  {
+    display: inline;
+    margin-top:16px;
+  }
+  .reply-body__form:nth-child(4){
+    padding-bottom:70px;
+    position: relative;
+    text-align:left;
+    vertical-align: top;
+  }
+  .reply-footer{
+    position: relative;
+    top:-100px;
+    width:288px;
+    z-index: 7;
+    height:64px;
+  }
+  .reply-footer__call-back{
+    position: relative;
+    top:-320px;
+    width:288px;
+    z-index: 7;
+    height:64px;
+  }
+  .reply-footer p{
+    position: relative;
+    width: 285px;
+    height: 64px;
+    left: 20px;
+    font-family: "TTLakes-Regular",sans-serif;
+    font-size: 14px;
+    color: #7E7E82;
+    z-index: 7;
+    top: 330px;
+  }
+  .reply-footer__call-back p{
+    position: relative;
+    width: 285px;
+    height: 64px;
+    left: 20px;
+    font-family: "TTLakes-Regular",sans-serif;
+    font-size: 14px;
+    color: #7E7E82;
+    z-index: 7;
+    top: 330px;
+  }
+  .colortext{
+    color: #FF3E79;
+    font-family:"TTLakes-Regular",sans-serif;
+    font-size: 14px;
+
+  }
+  .submit-img{
+    position: relative;
+    top: 340px;
+    left: 167px;
+  }
+
+}
+@media(min-width:768px) {
+  .reply{
+    left:70%;
+  }
+
+
+  .close-button-img{
+    position: relative;
+    left:0px;
+  }
+
+
+  .call-back{
+    position: relative;
+    top:-87px;
+    height:100%;
+    left:70%;
+  }
+
+
+  .telephone-button {
+    display: flex;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 57.91%;
+    top: 24px;
+    border-radius: 20px;
+  }
+
+  .tel-img {
+    width: 17.96px;
+    height: 17.96px;
+    left: 11px;
+    top: 11px;
+    display: flex;
+    position: absolute;
+    background-image: url("../img/tel.svg");
+    background-repeat: no-repeat;
+    background-size: 17.96px 17.96px;
+
+  }
+
+  .message-img {
+    width: 20px;
+    height: 20px;
+    left: 11px;
+    top: 10px;
+    display: flex;
+    position: absolute;
+    background-image: url("../img/mess.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+}
+
+@media(min-width:1120px){
+  .reply{
+    top:0px;
+    left: 70%;
+    width:440px;
+    height:940px;
+  }
+
+
+  .close-button a{
+    top:98px;
+    left:-76px;
+  }
+  .reply-body__form{
+    width:376px;
+  }
+  .reply-footer p{
+    width:376px;
+  }
+  .submit-img{
+    left:250px;
+  }
+  .call-back {
+    position: relative;
+    top: 0px;
+    left: 70%;
+    width: 440px;
+    height: 940px;
+  }
+  .close-button-img{
+    position: relative;
+    left:-70px;
+    top:40px;
+  }
+  .reply-footer__call-back p{
+    width:376px;
+  }
+  .close-button__call-back{
+    position: relative;
+    left:-70px;
+    top: 74px;
+  }
+
+
+  .close-button-img__callback{
+    left:-80px;
+    top:40px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
