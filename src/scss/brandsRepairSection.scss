@@ -1,13 +1,21 @@
+$blur:#D9FFF5;
+$grey:#F8F8F8;
+$TTLakesBold:"TTLakes-Bold";
+$TTLakesNorm:"TTLakes-Regular";
+$white:#FFFFFF;
+$green:#B8FFEC;
 @media(min-width:320px) {
-  .brands__item-repair p{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    font-family: "TTLakes-Regular", sans-serif;
-    position: relative;
-    text-align: left;
-    height:140px;
+  .brands__item-repair {
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-family: $TTLakesNorm, sans-serif;
+      position: relative;
+      text-align: left;
+      height: 140px;
+    }
   }
   .article-1120size {
     visibility: hidden;
@@ -22,7 +30,7 @@
     height:334px;
     top:614px;
     overflow: hidden;
-    background-color: #F8F8F8;
+    background-color: $grey;
     margin-top: -8px;
     margin-left: -8px;
     padding-right: 16px;
@@ -38,12 +46,12 @@
     text-transform: uppercase;
     letter-spacing: -0.2px;
     color: #7E7E82;
-    font-family: "TTLakes-Regular", sans-serif;
+    font-family:$TTLakesNorm, sans-serif;
     position: absolute;
     background-color: white;
     padding-right: 100%;
     width:100%;
-    border-top: 1px solid #D9FFF5;
+    border-top: 1px solid $green;
   }
   .brands__list{
     display: flex;
@@ -56,49 +64,55 @@
     top:92px;
 
   }
-  .swiper-slide .brands__item-repair{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 204px;
-    height: 160px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 16px;
-    flex-shrink: 0;
-    background-color: white;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    position: static;
-    top:16px;
+  .swiper-slide {
+    .brands__item-repair {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 204px;
+      height: 160px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 16px;
+      flex-shrink: 0;
+      background-color: white;
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      position: static;
+      top: 16px;
 
-  }
-  .swiper-slide .brands__prices-repair{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 260px;
-    height: 200px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 16px;
-    flex-shrink: 0;
-    background-color: white;
-    border: 1px solid #EAEAEA;
-    border-radius: 6px;
-    position: static;
-    top:16px;
+    }
 
-  }
-  .swiper-pagination.repair{
-    position: relative;
-    top:-30px;
-  }
-  .swiper-pagination.prices{
-    position: relative;
-    top:-70px;
-    margin-left:120px;
+    .brands__prices-repair {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 260px;
+      height: 200px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 16px;
+      flex-shrink: 0;
+      background-color: white;
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      position: static;
+      top: 16px;
 
+    }
+  }
+  .swiper-pagination {
+    .repair {
+      position: relative;
+      top: -30px;
+    }
+
+    .prices {
+      position: relative;
+      top: -70px;
+      margin-left: 120px;
+
+    }
   }
   .brands__item{
     display: flex;
@@ -159,7 +173,8 @@
     padding-right: 16px;
     top: 503px;
   }
-  .swiper{
+  .swiper
+  .brands{
     display: none;
   }
   .brands__list {

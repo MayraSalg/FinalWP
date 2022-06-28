@@ -55,19 +55,6 @@ header
     top:26px;}
 
 
-
-  .logo-container__logo{
-  display: flex;
-  width:24px;
-  height:30px;
-  right:68px;
-  position:absolute;
-  top:11px;
-  background-image: url("../img/Group.svg");
-  background-repeat: no-repeat;
-  background-size:23px 29px;
-}
-
 }
 .divider{
   background-color: #EAEAEA;
@@ -127,28 +114,7 @@ header
   }
 }
 
-.search-button{
-  display:flex;
-  background-color: #FF3E79;
-  width:40px;
-  height:40px;
-  position:absolute;
-  left:264px;
-  top: 24px;
-  border-radius: 20px;
 
- .search-button_element-1{
-  width:16px;
-  height:20px;
-  background-image: url("../img/Searcher.svg");
-  background-repeat: no-repeat;
-  position:absolute;
-  background-size:16px 20px;
-  top:10px;
-  right:11px;
-
-}
-}
 @media(min-width:320px) {
 
   .header__menu-button {

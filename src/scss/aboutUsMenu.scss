@@ -1,38 +1,9 @@
-nav{
-  display: flex;
-
-  height: 40px;
-  margin-top:20px;
-  position: relative;
-}
-
-.menu ul{
-  display: flex;
-  width:300px;
-  height:200px;
-}
-
-
-.line{
-  background-color:#D9FFF5;
-  width:320px;
-  height:1px;
-  margin-top:55px;
-
-}
-
-section{
-  position: absolute;
-  margin-top:88px;
-  display:flex;
-  width: 320px;
-  height :509px;
-  background-color:#F8F8F8;
-
-}
-section .repair-button{
-  visibility: hidden;
-}
+$blur:#D9FFF5;
+$grey:#F8F8F8;
+$TTLakesBold:"TTLakes-Bold";
+$TTLakesNorm:"TTLakes-Regular";
+$white:#FFFFFF;
+$green:#B8FFEC;
 @font-face {
   font-family: "TTLakes-Bold";
   font-style: normal;
@@ -52,90 +23,118 @@ section .repair-button{
 
 }
 
-h1{
-  display:flex;
-  flex-direction: row;
-  width: 288px;
-  height: 40px;
-  margin-top:24px;
-  margin-left:16px;
-  position:absolute;
-  font-family: "TTLakes-Bold",sans-serif;
-  font-weight:Bold;
-  font-size :28px;
-  color:#1B1C21;
-  letter-spacing: -0.6px;
 
-}
-
-.section-green-line{
-  width:4px;
-  height: 40px;
-  margin-top:24px;
-  background-image: url("../img/highlight.svg")
-
-}
-
-.menu p{
-  position:relative;
-  font-family: "TTLakes-Regular",sans-serif;
-  font-weight:Bold;
-  font-size :16px;
-  color:#1B1C21;
-  letter-spacing: -0.2px;
-  width: 220.16px;
-  height: 24px;
-  bottom:8px;
-  left:16.54px;
-  color: #7E7E82;
-
-}
-
-.arrow-lower{
-  position:absolute;
-  background-repeat: no-repeat;
-  width:8px;
-  height:5px;
-  top:265px;
-  left:24px;
-  background-image: url("../img/strelochki.svg");
-
-}
-.arrow-upper{
-  position:absolute;
-  background-repeat: no-repeat;
-  width:8px;
-  height:5px;
-  top:271px;
-  left:24px;
-  background-image: url("../img/strelochki.svg");
-
-}
-.arrow-description{
-  position:absolute;
-  font-family: "TTLakes-Regular",sans-serif;
-  font-weight:700;
-  font-size :16px;
-  color:#1B1C21;
-  left:0px;
-  width:110px;
-  height:24px;
-  letter-spacing: -0.2px;
-  top:-5px;
-  left:23px;
-
-}
-section .text-for-767px{
-  visibility: hidden;
-  position: absolute;
-}
 @media(min-width:320px) {
 
+  .menu {
+    p {
+      position: relative;
+      font-family: $TTLakesNorm, sans-serif;
+      font-weight: Bold;
+      font-size: 16px;
+      color: #1B1C21;
+      letter-spacing: -0.2px;
+      width: 220.16px;
+      height: 24px;
+      bottom: 8px;
+      left: 16.54px;
+      color: #7E7E82;
 
+    }
+  }
+  .arrow-lower{
+    position:absolute;
+    background-repeat: no-repeat;
+    width:8px;
+    height:5px;
+    top:265px;
+    left:24px;
+    background-image: url("../img/strelochki.svg");
 
+  }
+  .arrow-upper{
+    position:absolute;
+    background-repeat: no-repeat;
+    width:8px;
+    height:5px;
+    top:271px;
+    left:24px;
+    background-image: url("../img/strelochki.svg");
 
+  }
+  .arrow-description{
+    position:absolute;
+    font-family: $TTLakesNorm,sans-serif;
+    font-weight:700;
+    font-size :16px;
+    color:#1B1C21;
+    left:0px;
+    width:110px;
+    height:24px;
+    letter-spacing: -0.2px;
+    top:-5px;
+    left:23px;
 
+  }
+  section {
+  .text-for-767px{
+    visibility: hidden;
+    position: absolute;
+  }
+  }
 
+  .section-green-line{
+    width:4px;
+    height: 40px;
+    margin-top:24px;
+    background-image: url("../img/highlight.svg")
+
+  }
+  nav{
+    display: flex;
+
+    height: 40px;
+    margin-top:20px;
+    position: relative;
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      width: 300px;
+      height: 200px;
+    }
+  }
+
+  .line{
+    background-color:$blur;
+    width:320px;
+    height:1px;
+    margin-top:55px;
+
+  }
+
+  section {
+    position: absolute;
+    margin-top: 88px;
+    display: flex;
+    width: 320px;
+    height: 509px;
+    background-color: $grey;
+
+    .repair-button {
+      visibility: hidden;
+    }
+    .container-for-img {
+      position: absolute;
+      display: flex;
+      width: 165%;
+      height: 500px;
+      left: 0;
+      top: 25%;
+      background-repeat: no-repeat;
+    }
+  }
   .contact_inside-element{
     background-image: url("../img/Conticon.svg");
     width:20px;
@@ -153,21 +152,12 @@ section .text-for-767px{
     position: absolute;
     visibility: hidden;
   }
-  section .container-for-img {
-    position: absolute;
-    display: flex;
-    width: 165%;
-    height: 500px;
-    left: 0;
-    top: 25%;
-    background-repeat: no-repeat;
-  }
+
 
   .CPS-img {
     position: relative;
     bottom: 35px;
 
-    background-size:511px 307px;
     top:200px;
     width: 100%;
     height: 100%;
@@ -176,89 +166,33 @@ section .text-for-767px{
 
   }
 
-  .arrow-lower {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 8px;
-    height: 5px;
-    top:290px;
-    left: 24px;
-    background-image: url("../img/strelochki.svg");
-
-  }
-
-  .arrow-upper {
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 8px;
-    height: 5px;
-    top: 298px;
-    left: 24px;
-    background-image: url("../img/strelochki.svg");
-
-  }
-
-  .arrow-description {
-    position: absolute;
-    font-family: "TTLakes-Regular", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #1B1C21;
-    left: 0;
-    width: 110px;
-    height: 24px;
-    letter-spacing: -0.2px;
-    top: -5px;
-    left: 23px;
-
-  }
-
-  .line {
-    display: none;
-    background-color: white;
-    opacity: 0.9;
-    width: 100%;
-    height:2035px;
-    position: absolute;
-    top: -150px;
-    z-index: 5;
-  }
-
   section {
     position: absolute;
-    margin-top: 88px;
+    margin-top: 80px;
     display: flex;
     width: 100%;
     height: 509px;
-    background-color: #F8F8F8;
+    background-color: $grey;
     margin-left: -8px;
-  }
-  section.repair-button {
+ .repair-button {
     display: none;
   }
-
-  section .search-button {
-    position: absolute;
-    visibility: hidden;
+    .repair-button {
+      visibility: hidden;
+    }
+ .search-button {
+    display: none;
   }
-  @font-face {
-    font-family: "TTLakes-Bold";
-    font-style: normal;
-    font-weight: 400;
-    src: local("TTLakes-Bold"),
-    url("../fonts/TTLakes-Bold.ttf") format("tff");
+    .text-for-767px-part2 {
+      position: absolute;
+      visibility: hidden;}
 
+    .article-1120size-part2 {
+      position: absolute;
+      visibility: hidden;
+    }
   }
 
-  @font-face {
-    font-family: "TTLakes-Regular";
-    font-style: normal;
-    font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("TTLakes-Regular"),
-    url("../fonts/TTLakes-Regular.ttf") format("ttf");
-
-  }
   h1 {
     display: flex;
     flex-direction: row;
@@ -284,32 +218,34 @@ section .text-for-767px{
     right:100px;
     .menu-list__first-element{
       color:grey;
-      font-family: "TTLakes-Regular", sans-serif;
+      font-family: $TTLakesNorm, sans-serif;
     }
   }
 
   a{
     text-decoration: none;
-    font-family:"TTLakes-Regular",sans-serif;
+    font-family:$TTLakesNorm,sans-serif;
     color:#1B1C21;
   }
   .bordered-menu-element {
     display: flex;
     left: -17px;
-    background: #FFFFFF;
-    border: 2px solid #B8FFEC;
+    background: $white;
+    border: 2px solid $green;
     border-radius: 6px;
     position: relative;
     height: 24px;
     width: 246px;
     text-align: left;
   }
-  ul li {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    margin-left:15px;
-    justify-content: space-evenly;
+  ul {
+    li {
+      display: flex;
+      list-style: none;
+      width: 100%;
+      margin-left: 15px;
+      justify-content: space-evenly;
+    }
   }
 
   li a {
@@ -317,7 +253,7 @@ section .text-for-767px{
     margin-top: 43px;
     color: #7E7E82;
     text-decoration: none;
-    font-family: "TTLakes-Regular", sans-serif;
+    font-family: $TTLakesNorm, sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -336,7 +272,7 @@ section .text-for-767px{
     width: 75%;
     height: 90px;
     position: absolute;
-    font-family: "TTLakes-Regular", sans-serif;
+    font-family: $TTLakesNorm, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #1B1C21;
@@ -348,14 +284,7 @@ section .text-for-767px{
     position: absolute;
     visibility: hidden;
   }
-  section .text-for-767px-part2{
-    position: absolute;
-    visibility: hidden;
-  }
-  section .article-1120size-part2{
-    position: absolute;
-    visibility: hidden;
-  }
+
 
   .menu_container{
     width:100%;
@@ -376,12 +305,11 @@ section .text-for-767px{
 
   }
 
-  section .repair-button {
-    visibility: hidden;
-  }
-  .menu a{
-    display: inline-block;
+  .menu {
+    a {
+      display: inline-block;
 
+    }
   }
 
 }
@@ -395,8 +323,12 @@ section .text-for-767px{
     position: absolute;
   }
 
-  .menu-list li a {
-    margin-top: 35px;
+  .menu-list {
+    li {
+      a {
+        margin-top: 35px;
+      }
+    }
   }
   .arrow-lower {
     position: absolute;
@@ -427,9 +359,11 @@ section .text-for-767px{
     left:40px;
   }
 
-  section.search-button{
-    position: absolute;
-    visibility: hidden;
+  section {
+    .search-button {
+      position: absolute;
+      visibility: hidden;
+    }
   }
 
   .navigation-menu{
@@ -488,7 +422,7 @@ section .text-for-767px{
     display: flex;
     width: 150%;
     height: 416px;
-    background-color: #F8F8F8;
+    background-color: $grey;
 
   }
 
@@ -519,8 +453,8 @@ section .text-for-767px{
   .bordered-menu-element{
     display: flex;
     left:-8px;
-    background: #FFFFFF;
-    border: 2px solid #B8FFEC;
+    background: $white;
+    border: 2px solid $green;
     border-radius: 6px;
     position: relative;
     height: 24px;
@@ -533,43 +467,49 @@ section .text-for-767px{
     position: relative;
     left:-80px;
   }
-  .menu-main__list li{
-    display: flex;
-    list-style: none;
-    width:223px;
-    margin-left:-5px;
-    margin-bottom: -60px;
-    z-index: 1;
+  .menu-main__list {
+    li {
+      display: flex;
+      list-style: none;
+      width: 223px;
+      margin-left: -5px;
+      margin-bottom: -60px;
+      z-index: 1;
+    }
   }
-  li a{
-    width:221px;
-    margin-top:70px;
-    color:#7E7E82;
-    text-decoration: none;
-    font-family: "TTLakes-Regular",sans-serif;
-    font-weight:400;
-    font-size :16px;
-    text-align: center;
-    padding-top:8px;
-    padding-bottom:8px;
-    padding-left:16px;
-    display: block;
+  li {
+    a {
+      width: 221px;
+      margin-top: 70px;
+      color: #7E7E82;
+      text-decoration: none;
+      font-family: $TTLakesNorm, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      display: block;
+    }
   }
 
-  section .text-for-767px {
-    position: relative;
-    visibility: visible;
-    display: flex;
-    text-align: justify-all;
-    width: 305px;
-    height: 160px;
-    position: absolute;
-    font-family: "TTLakes-Regular", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #1B1C21;
-    top: 170px;
-    left: 16px;
+  section {
+    .text-for-767px {
+      position: relative;
+      visibility: visible;
+      display: flex;
+      text-align: justify-all;
+      width: 305px;
+      height: 160px;
+      position: absolute;
+      font-family: $TTLakesNorm, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #1B1C21;
+      top: 170px;
+      left: 16px;
+    }
   }
 
   .text-for-767px {
@@ -578,25 +518,27 @@ section .text-for-767px{
     height: 160px;
     top: 70px;
     right: 7px;
-    font-family: "TTLakes-Regular", sans-serif;
+    font-family: $TTLakesNorm, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #1B1C21;
   }
-  section .text-for-767px-part2 {
-    position: absolute;
-    visibility: visible;
-    display: flex;
-    text-align: justify-all;
-    width: 305px;
-    height: 160px;
-    position: absolute;
-    font-family: "TTLakes-Regular", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #1B1C21;
-    top: 262px;
-    left: 16px;
+  section {
+    .text-for-767px-part2 {
+      position: absolute;
+      visibility: visible;
+      display: flex;
+      text-align: justify-all;
+      width: 305px;
+      height: 160px;
+      position: absolute;
+      font-family: $TTLakesNorm, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #1B1C21;
+      top: 262px;
+      left: 16px;
+    }
   }
 
 
@@ -605,14 +547,16 @@ section .text-for-767px{
     visibility: hidden;
   }
 
-  section .container-for-img {
-    position: absolute;
-    display: flex;
-    width: 500px;
-    height: 80%;
-    left: 384px;
-    top: -20px;
-    background-repeat: no-repeat;
+  section {
+    .container-for-img {
+      position: absolute;
+      display: flex;
+      width: 500px;
+      height: 80%;
+      left: 384px;
+      top: -20px;
+      background-repeat: no-repeat;
+    }
   }
   .bordered-menu-element1:nth-child(4) a{
     position: relative;
@@ -639,14 +583,16 @@ section .text-for-767px{
     background-repeat: no-repeat;
 
   }
-  section .container-for-img {
-    position: absolute;
-    display: flex;
-    max-width: 1200px;
-    height: 90%;
-    left: 580px;
-    top: 0;
-    background-repeat: no-repeat;
+  section {
+    .container-for-img {
+      position: absolute;
+      display: flex;
+      max-width: 1200px;
+      height: 90%;
+      left: 580px;
+      top: 0;
+      background-repeat: no-repeat;
+    }
   }
 
 
@@ -654,9 +600,11 @@ section .text-for-767px{
     visibility: hidden;
     position: absolute;
   }
-  section .text-for-767px-part2 {
-    position: absolute;
-    visibility: hidden
+  section {
+    .text-for-767px-part2 {
+      position: absolute;
+      visibility: hidden
+    }
   }
   .bordered-menu-element1 {
     position: relative;
@@ -685,6 +633,18 @@ section .text-for-767px{
     background-color: #F8F8F8;
     margin-top: -8px;
     left: 340px;
+    .repair-button {
+      visibility: visible;
+      display: flex;
+      background-color: #FF3E79;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 848px;
+      top: 42px;
+      border-radius: 20px;
+
+    }
   }
   h1 {
 
@@ -706,19 +666,10 @@ section .text-for-767px{
     width: 3px;
     height: 40px;
     margin-top: 42px;
-    background-image: url("../img/highlight.svg")
+    background-image: url("../img/highlight.svg");
 
-  }
-  section .repair-button {
-    visibility: visible;
-    display: flex;
-    background-color: #FF3E79;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 848px;
-    top: 42px;
-    border-radius: 20px;
+
+
 
   }
   @font-face {

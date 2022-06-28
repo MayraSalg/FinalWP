@@ -4,12 +4,24 @@ import '../js/repair.js';
 import '../js/repairtest.js';
 import '../js/script.js';
 import '../js/test.js';
+import '../scss/style.scss';
+
+import Swiper, { Navigation, Pagination } from 'swiper'
+
+Swiper.use([Navigation, Pagination])
 
 
-console.log('Works!');
-import Swiper, { Pagination } from 'swiper' // импортируем Swiper в наш проект, а также один из его модулей "Pagination"
-Swiper.use([Pagination]) // подключаем Pagination к Swiper
+const brandswiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination'
+  },
 
+  slidesPerView: 'auto',
+
+  spaceBetween: 16,
+  loop: true,
+  direction: 'horizontal'
+})
 window.onload =  () => {  // ожидаем загрузку окна браузера
   if (window.matchMedia('(max-width: 767px)').matches) { // // свайпер у нас будет работать, если разрешение эерана не превышает 767px
     const swiper = new Swiper('.swiper', {  // инициализируем новый Swiper
@@ -26,3 +38,4 @@ window.onload =  () => {  // ожидаем загрузку окна брауз
   }
 
 }
+

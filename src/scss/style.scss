@@ -11,35 +11,28 @@
 $bgColor: #24292e;
 $text: #fff;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+.swiper-pagination {
+  .repair {
+    position: relative;
+    top: -30px;
+  }
 }
+.swiper-pagination {
+  .prices {
+    position: relative;
+    top: -70px;
+    margin-left: 120px;
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  }
 }
 .swiper {
-  &-pagination {
-    display: flex; //изменяем тип отображения на flex-контейнер
-    justify-content: center; //центрируем bullets по горизонтали
-
-    &-bullet {
-      height: 12px; // устанавливаем высоту bullets на 12 px
-      width: 12px;  // устанавливаем ширину bullets на 12 px
-      background: #DDD;  // устанавливаем цвет неактивных bullets
-      border-radius: 50%;  // делаем их круглыми
-      margin: 0 6px;  // устанавливаем отступ по горизонтали в 6px
-
-      &-active {
-        background: #B5B6BC; //устанавливем цвет для активных bullets
-      }
-    }
-  }
+  display: block;
+  width: 260px;
+  height: 110px;
+  position: relative;
+  top:95px;
+}
+.swiper-pagination{
+  position: relative;
+  top:88px;
 }
